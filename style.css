@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff4f7;
+    color: #5a3e36;
+}
+
+/* NAVBAR */
+nav {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e89cae;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5a3e36;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e89cae;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(255,192,203,0.4), rgba(255,192,203,0.4)),
+    url("C:\Users\Nashra\Downloads\Pink aura wallpaper.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(255,255,255,0.9);
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #d46a83;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background: #d46a83;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b84e67;
+}
+
+/* SECTION */
+.section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #d46a83;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card p {
+    padding: 0 20px 20px;
+}
+
+/* ===== ORGANIZED GALLERY ===== */
+
+.gallery-container {
+    padding: 80px 10%;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 40px;
+    color: #d46a83;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-label {
+    position: absolute;
+    bottom: 0;
+    background: rgba(212,106,131,0.85);
+    color: white;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+/* ===== PROFESSIONAL ABOUT PAGE ===== */
+
+.about-section {
+    padding: 100px 10%;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    color: #d46a83;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.stats {
+    background: #ffe3ea;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 35px;
+    color: #d46a83;
+}
+
+
+/* CONTACT */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+    border: 1px solid #eee;
+}
+
+footer {
+    background: #d46a83;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 70px;
+}
+/* ===== AESTHETIC CONTACT ===== */
+
+.contact-container {
+    padding: 100px 10%;
+    display: flex;
+    gap: 60px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 38px;
+    color: #d46a83;
+    margin-bottom: 20px;
+}
+
+.contact-form-box {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    border-radius: 15px;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-section,
+    .contact-container {
+        flex-direction: column;
+    }
+}
